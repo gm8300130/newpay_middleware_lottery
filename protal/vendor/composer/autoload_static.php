@@ -4,13 +4,15 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit4d4020a380b1027f4fe5251275ad0cd3
+class ComposerStaticInitc84c3cda7988a6a92cfd94cbc5074b29
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
+        'bbf73f3db644d3dced353b837903e74c' => __DIR__ . '/..' . '/php-di/php-di/src/DI/functions.php',
+        '2c7f5fe79c17d22a12cd0ce3111e4d87' => __DIR__ . '/../..' . '/app/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -24,6 +26,7 @@ class ComposerStaticInit4d4020a380b1027f4fe5251275ad0cd3
         ),
         'T' => 
         array (
+            'Twig\\' => 5,
             'Tests\\' => 6,
         ),
         'S' => 
@@ -32,13 +35,24 @@ class ComposerStaticInit4d4020a380b1027f4fe5251275ad0cd3
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\Translation\\' => 30,
             'Slim\\Views\\' => 11,
+            'Slim\\Flash\\' => 11,
+            'Slim\\Csrf\\' => 10,
             'Slim\\' => 5,
+        ),
+        'R' => 
+        array (
+            'Respect\\Validation\\' => 19,
         ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
+            'PhpDocReader\\' => 13,
+        ),
+        'N' => 
+        array (
+            'Noodlehaus\\' => 11,
         ),
         'M' => 
         array (
@@ -46,6 +60,7 @@ class ComposerStaticInit4d4020a380b1027f4fe5251275ad0cd3
         ),
         'I' => 
         array (
+            'Invoker\\' => 8,
             'Interop\\Container\\' => 18,
             'Illuminate\\Support\\' => 19,
             'Illuminate\\Database\\' => 20,
@@ -58,8 +73,11 @@ class ComposerStaticInit4d4020a380b1027f4fe5251275ad0cd3
         ),
         'D' => 
         array (
+            'Dotenv\\' => 7,
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
+            'DI\\Bridge\\Slim\\' => 15,
+            'DI\\' => 3,
         ),
         'C' => 
         array (
@@ -82,6 +100,10 @@ class ComposerStaticInit4d4020a380b1027f4fe5251275ad0cd3
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
         ),
+        'Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
         'Tests\\' => 
         array (
             0 => __DIR__ . '/../..' . '/tests',
@@ -101,10 +123,23 @@ class ComposerStaticInit4d4020a380b1027f4fe5251275ad0cd3
         'Slim\\Views\\' => 
         array (
             0 => __DIR__ . '/..' . '/slim/php-view/src',
+            1 => __DIR__ . '/..' . '/slim/twig-view/src',
+        ),
+        'Slim\\Flash\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/slim/flash/src',
+        ),
+        'Slim\\Csrf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/slim/csrf/src',
         ),
         'Slim\\' => 
         array (
             0 => __DIR__ . '/..' . '/slim/slim/Slim',
+        ),
+        'Respect\\Validation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/respect/validation/library',
         ),
         'Psr\\Log\\' => 
         array (
@@ -118,9 +153,21 @@ class ComposerStaticInit4d4020a380b1027f4fe5251275ad0cd3
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
+        'PhpDocReader\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-di/phpdoc-reader/src/PhpDocReader',
+        ),
+        'Noodlehaus\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hassankhan/config/src',
+        ),
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Invoker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-di/invoker/src',
         ),
         'Interop\\Container\\' => 
         array (
@@ -146,6 +193,10 @@ class ComposerStaticInit4d4020a380b1027f4fe5251275ad0cd3
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
         ),
+        'Dotenv\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
+        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -154,25 +205,32 @@ class ComposerStaticInit4d4020a380b1027f4fe5251275ad0cd3
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
+        'DI\\Bridge\\Slim\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-di/slim-bridge/src',
+        ),
+        'DI\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-di/php-di/src/DI',
+        ),
         'Carbon\\' => 
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
         ),
-<<<<<<< .mine
-        'App\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/App/Models',
-        ),
-||||||| .r12674
-=======
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/App',
         ),
->>>>>>> .r12682
     );
 
     public static $prefixesPsr0 = array (
+        'T' => 
+        array (
+            'Twig_' => 
+            array (
+                0 => __DIR__ . '/..' . '/twig/twig/lib',
+            ),
+        ),
         'P' => 
         array (
             'Prophecy\\' => 
@@ -664,10 +722,10 @@ class ComposerStaticInit4d4020a380b1027f4fe5251275ad0cd3
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit4d4020a380b1027f4fe5251275ad0cd3::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit4d4020a380b1027f4fe5251275ad0cd3::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit4d4020a380b1027f4fe5251275ad0cd3::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit4d4020a380b1027f4fe5251275ad0cd3::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitc84c3cda7988a6a92cfd94cbc5074b29::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitc84c3cda7988a6a92cfd94cbc5074b29::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitc84c3cda7988a6a92cfd94cbc5074b29::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitc84c3cda7988a6a92cfd94cbc5074b29::$classMap;
 
         }, null, ClassLoader::class);
     }

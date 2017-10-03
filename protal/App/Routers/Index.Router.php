@@ -24,3 +24,8 @@ $app->get('/hello/{name}', function ($request, $response, $args) {
 });
 
 $app->get('/home', App\Controllers\HomeController::class.':Home');
+
+$app->get('/migrations', App\Database\migrations\UserMigration::class.':run');
+$app->get('/seeds', App\Database\seeds\UserSeeds::class.':run');
+
+$app->get('/users', App\Controllers\HomeController::class.':User');
