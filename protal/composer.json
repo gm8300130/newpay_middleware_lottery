@@ -23,7 +23,8 @@
         "slim/csrf": "^0.7.0",
         "slim/flash": "^0.1.0",
         "hassankhan/config": "^0.10.0",
-        "respect/validation": "^1.1"
+        "respect/validation": "^1.1",
+        "symfony/var-dumper": "^3.3"
     },
     "require-dev": {
         "phpunit/phpunit": ">=4.8 < 6.0"
@@ -34,7 +35,7 @@
             "App\\": "App/"
         },
         "files": [
-            "app/helpers.php"
+            "App/helpers.php"
         ]
     },
 

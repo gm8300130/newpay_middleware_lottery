@@ -11,5 +11,6 @@ return array(
     '5255c38a0faeba867671b61dfda6d864' => $vendorDir . '/paragonie/random_compat/lib/random.php',
     '72579e7bd17821bb1321b87411366eae' => $vendorDir . '/illuminate/support/helpers.php',
     'bbf73f3db644d3dced353b837903e74c' => $vendorDir . '/php-di/php-di/src/DI/functions.php',
-    '2c7f5fe79c17d22a12cd0ce3111e4d87' => $baseDir . '/app/helpers.php',
+    '667aeda72477189d0494fecd327c3641' => $vendorDir . '/symfony/var-dumper/Resources/functions/dump.php',
+    'e6b1701b0e1e6168a4edbb93c82268a9' => $baseDir . '/App/helpers.php',
 );

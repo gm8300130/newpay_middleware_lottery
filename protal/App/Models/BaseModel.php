@@ -1,5 +1,6 @@
 <?php
 namespace APP\Models;
+
 use \Illuminate\Database\Eloquent\Model ;
 
 /**
@@ -10,8 +11,7 @@ use \Illuminate\Database\Eloquent\Model ;
  */
 class BaseModel extends Model
 {
-    private $db;
-    public function __contrust(ContainerInterface &$container){
-        $this->db = $container->get('db');
+
+    public function __contrust() {
     }
 }

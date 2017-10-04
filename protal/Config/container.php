@@ -15,7 +15,6 @@ use Slim\Interfaces\RouterInterface;
 use Slim\Views\Twig;
 use Slim\Views\TwigExtension;
 use Monolog\Logger as Log;
-//use Psr\Log\LoggerInterface;
 use Noodlehaus\Config;
 
 return [
@@ -23,8 +22,14 @@ return [
         return $c->get('router');
     },
     Twig::class => function(ContainerInterface $c) {
-        $twig = new Twig(__DIR__ . '/../resources/views', ['cache' => false,]);
-        $twig->addExtension(new TwigExtension($c->get('router'), $c->get('request')->getUri()));
+        $twig = new Twig(RESOURCES_PATH . '/views', ['cache' => false,]);
+        $twig->addExtension(
+            new TwigExtension(
+                $c->get('router'),
+                $c->get('request')
+                ->getUri()
+            )
+        );
         $twig->getEnvironment()->addGlobal('flash', $c->get(Messages::class));
         $twig->getEnvironment()->addGlobal('auth',
             [
@@ -56,10 +61,15 @@ return [
         return new Messages();
     },
     Log::class => function (ContainerInterface $c) {    
-        $settings = new Config(__DIR__ . '/../config/logger.php');
+        $settings = new Config(CONFIG_PATH . '/logger.php');
         $logger = new Monolog\Logger($settings->get('logger')['name']);
         $logger->pushProcessor(new Monolog\Processor\UidProcessor());
-        $logger->pushHandler(new Monolog\Handler\StreamHandler($settings->get('logger')['path'], $settings->get('logger')['level']));   
+        $logger->pushHandler(
+            new Monolog\Handler\StreamHandler(
+                $settings->get('logger')['path'],
+                $settings->get('logger')['level']
+            )
+        );   
         
         return $logger;     
     }

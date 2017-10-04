@@ -14,6 +14,6 @@ class App extends DIBridge
 			'settings.addContentLengthHeader' => false,
 		]);
 
-		$builder->addDefinitions(__DIR__.'/../config/container.php');
+		$builder->addDefinitions(CONFIG_PATH . '/container.php');
 	}
 }

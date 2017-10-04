@@ -9,12 +9,21 @@ namespace App\Controllers;
 
 use App\Database\migrations\UserMigration;
 use App\Database\seeds\UserSeed;
+use App\Models\User;
 
 class HomeController extends BaseController
 {
-    public function index() {
+    public function index(User $u) {
         $this->log->info('456');
+        var_dump($u->all()->toArray());
         return $this->render('home');
+    }
+
+    public function getPost() {
+        dump($this->request);
+        dump($this->request->getQueryParams());
+         dump($this->request->getMethod());
+        //dump($request->isPost());
     }
 
     public function migration(UserMigration $UserMigration) {
@@ -24,4 +33,5 @@ class HomeController extends BaseController
     public function seed(UserSeed $UserSeed) {
         $UserSeed->run();
     }
+
 }

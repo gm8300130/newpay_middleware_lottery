@@ -10,3 +10,19 @@
 [2017-10-03 07:31:39] slim-app.INFO: Monolog\Logger Object (     [name:protected] => slim-app     [handlers:protected] => Array         (             [0] => Monolog\Handler\StreamHandler Object                 (                     [stream:protected] =>                      [url:protected] => D:\work_bo\svn\newpay_middleware\protal\config/../logs/vip500-2017-10-03.log                     [errorMessage:Monolog\Handler\StreamHandler:private] =>                      [filePermission:protected] =>                      [useLocking:protected] =>                      [dirCreated:Monolog\Handler\StreamHandler:private] =>                      [level:protected] => 100                     [bubble:protected] => 1                     [formatter:protected] =>                      [processors:protected] => Array                         (                         )                  )          )      [processors:protected] => Array         (             [0] => Monolog\Processor\UidProcessor Object                 (                     [uid:Monolog\Processor\UidProcessor:private] => e2defe8                 )          )      [microsecondTimestamps:protected] => 1 )  [] {"uid":"e2defe8"}
 [2017-10-03 07:32:13] slim-app.INFO: Monolog\Logger Object (     [name:protected] => slim-app     [handlers:protected] => Array         (             [0] => Monolog\Handler\StreamHandler Object                 (                     [stream:protected] =>                      [url:protected] => D:\work_bo\svn\newpay_middleware\protal\config/../logs/vip500-2017-10-03.log                     [errorMessage:Monolog\Handler\StreamHandler:private] =>                      [filePermission:protected] =>                      [useLocking:protected] =>                      [dirCreated:Monolog\Handler\StreamHandler:private] =>                      [level:protected] => 100                     [bubble:protected] => 1                     [formatter:protected] =>                      [processors:protected] => Array                         (                         )                  )          )      [processors:protected] => Array         (             [0] => Monolog\Processor\UidProcessor Object                 (                     [uid:Monolog\Processor\UidProcessor:private] => 0d35720                 )          )      [microsecondTimestamps:protected] => 1 )  [] {"uid":"0d35720"}
 [2017-10-03 07:46:19] slim-app.INFO: 456 [] {"uid":"74bcd33"}
+[2017-10-03 08:51:15] slim-app.INFO: 456 [] {"uid":"fec1e7d"}
+[2017-10-03 08:51:21] slim-app.INFO: 456 [] {"uid":"0d99e74"}
+[2017-10-03 08:54:11] slim-app.INFO: 456 [] {"uid":"20154b0"}
+[2017-10-03 09:11:44] slim-app.INFO: 456 [] {"uid":"5dfd8b9"}
+[2017-10-03 09:12:00] slim-app.INFO: 456 [] {"uid":"6a05422"}
+[2017-10-03 09:15:40] slim-app.INFO: 456 [] {"uid":"1a08331"}
+[2017-10-03 09:18:45] slim-app.INFO: 456 [] {"uid":"0ac32fc"}
+[2017-10-03 09:19:27] slim-app.INFO: 456 [] {"uid":"8059be2"}
+[2017-10-03 09:21:33] slim-app.INFO: 456 [] {"uid":"a211a24"}
+[2017-10-03 09:24:20] slim-app.INFO: 456 [] {"uid":"cba3550"}
+[2017-10-03 09:24:24] slim-app.INFO: 456 [] {"uid":"3fa984a"}
+[2017-10-03 09:24:53] slim-app.INFO: 456 [] {"uid":"a3cd6b5"}
+[2017-10-03 09:25:28] slim-app.INFO: 456 [] {"uid":"10dcb44"}
+[2017-10-03 09:25:32] slim-app.INFO: 456 [] {"uid":"a46f547"}
+[2017-10-03 09:28:46] slim-app.INFO: 456 [] {"uid":"eadb537"}
+[2017-10-03 09:28:49] slim-app.INFO: 456 [] {"uid":"227dc81"}

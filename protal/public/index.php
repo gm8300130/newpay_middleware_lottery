@@ -1,5 +1,4 @@
 <?php
-
-define('ROOT',__DIR__);
-require __DIR__ . '/../bootstrap/app.php';
+require str_replace('\\', '/', dirname(dirname(__FILE__))) . '/global.php';
+require BOOTSTARP . '/App.php';
 $app->run();

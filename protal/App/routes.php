@@ -28,3 +28,6 @@ $app->get('/migration', ['App\Controllers\HomeController', 'migration'])->setNam
 
 //Seed
 $app->get('/seeds', ['App\Controllers\HomeController', 'seed'])->setName('seed');
+
+
+$app->post('/post', ['App\Controllers\HomeController', 'getPost']);

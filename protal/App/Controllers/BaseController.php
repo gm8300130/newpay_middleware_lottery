@@ -9,8 +9,11 @@ namespace App\Controllers;
 
 use App\Support\Auth\Auth;
 use App\Support\Validation\Contracts\ValidatorInterface;
+//use Slim\Http\Request as Request;
+//use Slim\Http\Response as Response;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
+
 use Slim\Flash\Messages;
 use Slim\Router;
 use Slim\Views\Twig;
